@@ -1,0 +1,9 @@
+<div>
+  Username <%= cookies["username"] %>
+</div>
+<div>
+  Password <span class="spoiler"><%= cookies["password"] %></span>
+</div>
+
+<%= link_to "Open uMessage", "/wasm/", {"class": "btn btn-outline-primary my-3"} %>
+
