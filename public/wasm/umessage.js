@@ -27,7 +27,7 @@ var ENVIRONMENT_IS_SHELL = !ENVIRONMENT_IS_WEB && !ENVIRONMENT_IS_NODE && !ENVIR
 
 // --pre-jses are emitted after the Module integration code, so that they can
 // refer to Module (if they choose; they can also define Module)
-// include: /tmp/tmp46gq5v13.js
+// include: /tmp/tmpmyj1f7q5.js
 
   Module['expectedDataFileDownloads'] ??= 0;
   Module['expectedDataFileDownloads']++;
@@ -204,25 +204,25 @@ Module['FS_createPath']("/", "icons", true, true);
     }
 
     }
-    loadPackage({"files": [{"filename": "/Lato-Bold.ttf", "start": 0, "end": 657188}, {"filename": "/Lato-Regular.ttf", "start": 657188, "end": 1314400}, {"filename": "/bottomfade.png", "start": 1314400, "end": 1340048}, {"filename": "/foxmoss-pfp.png", "start": 1340048, "end": 1360484}, {"filename": "/icons/credit.txt", "start": 1360484, "end": 1360567}, {"filename": "/icons/down.png", "start": 1360567, "end": 1361004}, {"filename": "/icons/down_50.png", "start": 1361004, "end": 1361491}, {"filename": "/icons/home.png", "start": 1361491, "end": 1362108}, {"filename": "/icons/plus.png", "start": 1362108, "end": 1362509}, {"filename": "/icons/profile.png", "start": 1362509, "end": 1363116}, {"filename": "/icons/up.png", "start": 1363116, "end": 1363556}, {"filename": "/icons/up_50.png", "start": 1363556, "end": 1364036}, {"filename": "/icons/x.png", "start": 1364036, "end": 1364442}], "remote_package_size": 1364442});
+    loadPackage({"files": [{"filename": "/Lato-Bold.ttf", "start": 0, "end": 657188}, {"filename": "/Lato-Regular.ttf", "start": 657188, "end": 1314400}, {"filename": "/bottomfade.png", "start": 1314400, "end": 1340048}, {"filename": "/foxmoss-pfp.png", "start": 1340048, "end": 1360484}, {"filename": "/icons/credit.txt", "start": 1360484, "end": 1360567}, {"filename": "/icons/down.png", "start": 1360567, "end": 1361004}, {"filename": "/icons/down_50.png", "start": 1361004, "end": 1361491}, {"filename": "/icons/home.png", "start": 1361491, "end": 1362108}, {"filename": "/icons/plus.png", "start": 1362108, "end": 1362509}, {"filename": "/icons/profile.png", "start": 1362509, "end": 1363116}, {"filename": "/icons/up.png", "start": 1363116, "end": 1363556}, {"filename": "/icons/up_50.png", "start": 1363556, "end": 1364036}, {"filename": "/icons/x.png", "start": 1364036, "end": 1364442}, {"filename": "/pfp.png", "start": 1364442, "end": 1366305}], "remote_package_size": 1366305});
 
   })();
 
-// end include: /tmp/tmp46gq5v13.js
-// include: /tmp/tmpsu0nzkfv.js
+// end include: /tmp/tmpmyj1f7q5.js
+// include: /tmp/tmp9q96jibn.js
 
     // All the pre-js content up to here must remain later on, we need to run
     // it.
     if ((typeof ENVIRONMENT_IS_WASM_WORKER != 'undefined' && ENVIRONMENT_IS_WASM_WORKER) || (typeof ENVIRONMENT_IS_PTHREAD != 'undefined' && ENVIRONMENT_IS_PTHREAD) || (typeof ENVIRONMENT_IS_AUDIO_WORKLET != 'undefined' && ENVIRONMENT_IS_AUDIO_WORKLET)) Module['preRun'] = [];
     var necessaryPreJSTasks = Module['preRun'].slice();
-  // end include: /tmp/tmpsu0nzkfv.js
-// include: /tmp/tmp96eqzxf8.js
+  // end include: /tmp/tmp9q96jibn.js
+// include: /tmp/tmpmdg82fay.js
 
     if (!Module['preRun']) throw 'Module.preRun should exist because file support used it; did a pre-js delete it?';
     necessaryPreJSTasks.forEach((task) => {
       if (Module['preRun'].indexOf(task) < 0) throw 'All preRun tasks that exist before user pre-js code should remain after; did you replace Module or modify Module.preRun?';
     });
-  // end include: /tmp/tmp96eqzxf8.js
+  // end include: /tmp/tmpmdg82fay.js
 
 
 var arguments_ = [];
@@ -4085,7 +4085,7 @@ async function createWasm() {
             try {
               // The default value is 'ws://' the replace is needed because the compiler replaces '//' comments with '#'
               // comments without checking context, so we'd end up with ws:#, the replace swaps the '#' for '//' again.
-              var url = 'wss://foxmoss.com:6000/localhost:8448'.replace('#', '//');
+              var url = 'wss://foxmoss.com/wsproxy/foxmoss.com:8448'.replace('#', '//');
               // Make the WebSocket subprotocol (Sec-WebSocket-Protocol) default to binary if no configuration is set.
               var subProtocols = 'binary'; // The default value is 'binary'
               // The default WebSocket options
